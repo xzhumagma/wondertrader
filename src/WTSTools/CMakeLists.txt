@@ -1,8 +1,8 @@
 
-#1. 确定CMake的最低版本需求
-cmake_minimum_required(VERSION 3.0.0)
+#1. cmakelist version
+cmake_minimum_required(VERSION 3.5)
 
-#2. 确定工程名
+#2. project name
 project(WTSTools LANGUAGES CXX)
 SET(CMAKE_CXX_STANDARD 17)
 
@@ -13,7 +13,7 @@ ENDIF()
 
 SET(LIBRARY_OUTPUT_PATH  ${CMAKE_BINARY_DIR}/build_${PLATFORM}/${CMAKE_BUILD_TYPE}/libs)
 
-#7. 添加源码
+#7. add source code
 file(GLOB SRCS *.cpp)
 file(GLOB HDRS *.h)
 

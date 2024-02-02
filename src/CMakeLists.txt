@@ -37,10 +37,10 @@ ELSE (GNUCC)
 
 		MESSAGE(STATUS "MyDepends is at $ENV{MyDependsGcc}")
 	ELSE(UNIX)
-		SET (MyDeps "/home/mydeps")
+		SET (MyDeps "/home/xpzhu/anaconda3/envs/wtenv")
 		SET(SUFFIX .so)
 
-		MESSAGE(STATUS "MyDepends is at /home/mydeps")
+		MESSAGE(STATUS "MyDepends is at /home/xpzhu/anaconda3/envs/wtenv")
 	ENDIF()
 
 	SET(INCS ${MyDeps}/include)
